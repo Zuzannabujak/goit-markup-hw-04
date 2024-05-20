@@ -249,7 +249,8 @@ ul {
 {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 .thirdsection-mainheading
 {
@@ -378,7 +379,7 @@ margin-bottom: 8px;
   display: flex;
   align-items: center;
   justify-content: center; 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .sm-link:hover {
   background-color: #404bbf;
@@ -386,4 +387,36 @@ margin-bottom: 8px;
 
 .sm-link:focus {
   background-color: #404bbf;
+}
+.socialmedia-icon
+{
+  fill:  #f4f4fd;
+
+}
+.parent 
+{
+  position: relative;
+  overflow: hidden;
+}
+
+.child 
+{
+  top: 0;
+  left: 0;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: #4D5AE5;
+  color: #F4F4FD;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}    
+
+.parent:hover .child 
+{
+  transform: translateY(0);
 }
