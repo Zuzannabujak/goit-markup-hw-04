@@ -433,6 +433,9 @@ margin-bottom: 8px;
  {
   display:flex;
   align-items: baseline;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .foot-div 
 {
